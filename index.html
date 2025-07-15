@@ -51,41 +51,69 @@
                         </div>
                     </div>
 
-                    <div class="current-process-flow">
+                    <div class="current-Tesla-process-flow">
                         <h3 class="subsection-title">Current Process Flow Analysis</h3>
                         <p class="analysis-description">
-                            The existing manufacturing process flow demonstrates several critical inefficiencies that impede optimal production capacity utilization. The current linear production model creates dependencies that result in cascade delays when disruptions occur at any single point in the manufacturing chain (Brown et al., 2023).
+                            The existing manufacturing process flow demonstrates several critical inefficiencies that impede optimal production capacity utilization and is potentially outdated model in the year 2025. The current linear production model creates dependencies that result in cascade delays when disruptions occur at any single point in the manufacturing chain (Bohrpub, 2023) and it is very reliant in economical and political factors.
                         </p>
                         
                         <div class="flowchart-container">
-                            <svg id="currentProcessFlow" width="100%" height="700"></svg>
+                            <img src="https://st2.depositphotos.com/1523669/6195/i/450/depositphotos_61951671-stock-photo-utilize-web-icon.jpg" alt="Current Tesla Process Flow" class="company-image" width="10" height="10" >
+                            <div class="process-table" style="margin-top: 2rem;">
+                                <table style="width: 100%; border-collapse: collapse; color: white;">
+                                    <thead>
+                                        <tr style="background-color: #cc0000;">
+                                            <th style="padding: 10px; text-align: left;">ID</th>
+                                            <th style="padding: 10px; text-align: left;">Label</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td style="padding: 8px; border-bottom: 1px solid #666;">assembly-wait</td><td style="padding: 8px; border-bottom: 1px solid #666;">Assembly Queue Wait</td></tr>
+                                        <tr><td style="padding: 8px; border-bottom: 1px solid #666;">battery-start</td><td style="padding: 8px; border-bottom: 1px solid #666;">Battery Cell Production</td></tr>
+                                        <tr><td style="padding: 8px; border-bottom: 1px solid #666;">delivery</td><td style="padding: 8px; border-bottom: 1px solid #666;">Customer Delivery</td></tr>
+                                        <tr><td style="padding: 8px; border-bottom: 1px solid #666;">final-assembly</td><td style="padding: 8px; border-bottom: 1px solid #666;">Final Assembly</td></tr>
+                                        <tr><td style="padding: 8px; border-bottom: 1px solid #666;">final-testing</td><td style="padding: 8px; border-bottom: 1px solid #666;">Final Testing & Calibration</td></tr>
+                                        <tr><td style="padding: 8px; border-bottom: 1px solid #666;">material-wait</td><td style="padding: 8px; border-bottom: 1px solid #666;">Material Delivery Wait</td></tr>
+                                        <tr><td style="padding: 8px; border-bottom: 1px solid #666;">packaging</td><td style="padding: 8px; border-bottom: 1px solid #666;">Packaging & Preparation</td></tr>
+                                        <tr><td style="padding: 8px; border-bottom: 1px solid #666;">pack-assembly</td><td style="padding: 8px; border-bottom: 1px solid #666;">Battery Pack Assembly</td></tr>
+                                        <tr><td style="padding: 8px; border-bottom: 1px solid #666;">powertrain</td><td style="padding: 8px; border-bottom: 1px solid #666;">Powertrain Installation</td></tr>
+                                        <tr><td style="padding: 8px; border-bottom: 1px solid #666;">quality-check1</td><td style="padding: 8px; border-bottom: 1px solid #666;">Incoming Quality Check</td></tr>
+                                        <tr><td style="padding: 8px; border-bottom: 1px solid #666;">quality-check2</td><td style="padding: 8px; border-bottom: 1px solid #666;">Mid-Process Quality Check</td></tr>
+                                        <tr><td style="padding: 8px; border-bottom: 1px solid #666;">quality-final</td><td style="padding: 8px; border-bottom: 1px solid #666;">Final Quality Assurance</td></tr>
+                                        <tr><td style="padding: 8px; border-bottom: 1px solid #666;">shipping</td><td style="padding: 8px; border-bottom: 1px solid #666;">Shipping Arrangement</td></tr>
+                                        <tr><td style="padding: 8px; border-bottom: 1px solid #666;">supplier-order</td><td style="padding: 8px; border-bottom: 1px solid #666;">Supplier Order Placement</td></tr>
+                                        <tr><td style="padding: 8px; border-bottom: 1px solid #666;">systems-integration</td><td style="padding: 8px; border-bottom: 1px solid #666;">Systems Integration</td></tr>
+                                        <tr><td style="padding: 8px;">vehicle-frame</td><td style="padding: 8px;">Vehicle Frame Construction</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                         
                         <div class="process-shortcomings">
                             <h4>Critical Shortcomings of Current Process Model</h4>
                             <div class="shortcomings-grid">
                                 <div class="shortcoming-item">
-                                    <h5>1. Sequential Bottlenecks</h5>
+                                    <h5>1. Assembly Queue Wait</h5>
                                     <p>The linear dependency structure creates cascading delays when any single process experiences disruption, resulting in average production delays of 14.7 hours per incident (Johnson et al., 2023).</p>
                                 </div>
                                 <div class="shortcoming-item">
-                                    <h5>2. Insufficient Quality Integration</h5>
+                                    <h5>2. Battery Cell Production</h5>
                                     <p>Quality control checkpoints occur only at predetermined stages, allowing defects to propagate through multiple production phases before detection, increasing rework costs by 23% (Garcia & Liu, 2024).</p>
                                 </div>
                                 <div class="shortcoming-item">
-                                    <h5>3. Limited Predictive Analytics</h5>
+                                    <h5>3. Customer Delivery</h5>
                                     <p>Current systems lack real-time predictive maintenance capabilities, resulting in unplanned downtime averaging 8.3% of total production time (Miller et al., 2023).</p>
                                 </div>
                                 <div class="shortcoming-item">
-                                    <h5>4. Inventory Management Inefficiencies</h5>
+                                    <h5>4. Final Assembly</h5>
                                     <p>Just-in-time inventory management lacks buffer optimization for supply chain volatility, creating material shortage incidents affecting 12% of production schedules (Rodriguez & Kim, 2024).</p>
                                 </div>
                                 <div class="shortcoming-item">
-                                    <h5>5. Resource Allocation Constraints</h5>
+                                    <h5>5. Final Testing & Calibration</h5>
                                     <p>Manual resource allocation processes fail to optimize workstation utilization, resulting in 18% underutilization of manufacturing equipment during peak demand periods (Lee & Patel, 2024).</p>
                                 </div>
                                 <div class="shortcoming-item">
-                                    <h5>6. Data Integration Gaps</h5>
+                                    <h5>6. Packaging & Preparation</h5>
                                     <p>Isolated information systems prevent real-time cross-functional visibility, delaying decision-making processes by an average of 4.2 hours per critical issue (Smith & Williams, 2023).</p>
                                 </div>
                             </div>
@@ -506,4 +534,19 @@
                         <p>Zhang, L., Park, K. H., & Stevens, R. (2024). <em>Process model analysis methodologies: Contemporary applications in automotive manufacturing</em>. International Journal of Production Research, 62(8), 2456-2478. https://doi.org/10.1080/00207543.2024.2234567</p>
                     </div>
                     <div class="reference-item">
-                        <p>Zhou, M., Anderson, J. F., & Martinez, C. R. (2023). <em>Dynamic resource optimization in parallel manufacturing systems</em
+                        <p>Zhou, M., Anderson, J. F., & Martinez, C. R. (2023). <em>Dynamic resource optimization in parallel manufacturing systems</em>. Operations Research Letters, 51(4), 234-241. https://doi.org/10.1016/j.orl.2023.05.008</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Tesla Business Intelligence Analysis. Academic research for educational purposes.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
